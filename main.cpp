@@ -13,13 +13,13 @@ vector<string> split(const string& str, const char& delim)
     {
         if(el != delim)
             topush += el;
-        else if(el == delim && topush != "")
+        else if(el == delim && !topush.empty())
         {
             result.push_back(topush);
-            topush = "";
+            topush.clear();
         }
     }
-    if(topush != "")
+    if(!topush.empty()")
         result.push_back(topush);
     return result;
 }
