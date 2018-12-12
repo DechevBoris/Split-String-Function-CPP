@@ -19,7 +19,7 @@ vector<string> split(const string& str, const char& delim)
             topush.clear();
         }
     }
-    if(!topush.empty()")
+    if(!topush.empty())
         result.push_back(topush);
     return result;
 }
